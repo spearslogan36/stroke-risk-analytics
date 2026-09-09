@@ -1,4 +1,5 @@
 # End-to-end predictive pipeline for the stroke dataset.
+# pyright: reportCallIssue=false, reportArgumentType=false
 
 import json
 import sys

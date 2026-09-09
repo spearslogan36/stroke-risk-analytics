@@ -1,3 +1,15 @@
+
+# This file relies on ColumnTransformer.set_output(transform="pandas"), which
+# changes its actual return type to a DataFrame at runtime. Pylance's type
+# stubs for scikit-learn don't know about that call, so they report the
+# older, generic return type (numpy array / sparse matrix) and flag every
+# `.columns` access here as an error, even though the code has been verified
+# to run correctly. Firth's `feature_names_in_` has the same underlying
+# issue: it's set dynamically during `.fit()`, and this package's type
+# stubs don't declare it. Both are confirmed false positives, not real bugs.
+# pyright: reportAttributeAccessIssue=false, reportArgumentType=false
+
+
 import sys
 import warnings
 from pathlib import Path
