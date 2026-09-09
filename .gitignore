@@ -1,0 +1,6 @@
+# Python cache files
+__pycache__/
+*.pyc
+
+# Generated database -- rebuild with: python src/build_database.py
+data/processed/*.db

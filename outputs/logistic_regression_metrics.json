@@ -1,0 +1,63 @@
+{
+  "baseline": {
+    "accuracy": 0.952054794520548,
+    "precision": 1.0,
+    "recall": 0.02,
+    "f1": 0.0392156862745098,
+    "roc_auc": 0.8391358024691358,
+    "confusion_matrix": [
+      [
+        972,
+        0
+      ],
+      [
+        49,
+        1
+      ]
+    ]
+  },
+  "tuned_balanced_default_threshold": {
+    "accuracy": 0.726027397260274,
+    "precision": 0.12903225806451613,
+    "recall": 0.8,
+    "f1": 0.2222222222222222,
+    "roc_auc": 0.8385185185185184,
+    "confusion_matrix": [
+      [
+        702,
+        270
+      ],
+      [
+        10,
+        40
+      ]
+    ]
+  },
+  "tuned_balanced_selected_threshold": {
+    "threshold": 0.65,
+    "selected_via": "out-of-fold cross-validated probabilities on training data",
+    "accuracy": 0.8473581213307241,
+    "precision": 0.20555555555555555,
+    "recall": 0.74,
+    "f1": 0.3217391304347826,
+    "roc_auc": 0.8385185185185184,
+    "confusion_matrix": [
+      [
+        829,
+        143
+      ],
+      [
+        13,
+        37
+      ]
+    ]
+  },
+  "grid_search_best_params": {
+    "classifier__C": 0.01,
+    "classifier__class_weight": "balanced",
+    "classifier__max_iter": 2000,
+    "classifier__penalty": "l2",
+    "classifier__solver": "lbfgs"
+  },
+  "grid_search_best_cv_roc_auc": 0.8403589739772259
+}
