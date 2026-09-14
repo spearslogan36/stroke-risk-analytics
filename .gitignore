@@ -2,5 +2,8 @@
 __pycache__/
 *.pyc
 
-# Generated database -- rebuild with: python src/build_database.py
+# Generated database, rebuild with: python src/build_database.py
 data/processed/*.db
+
+# Keeps newly generated processed data from export_for_tableau out of the repo.
+data/processed/*
