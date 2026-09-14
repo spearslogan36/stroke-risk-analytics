@@ -1,0 +1,1182 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20262.26.0819.2015                               -->
+<workbook _.fcp.WorkbookFingerprinting.true...author-id='8bc5424b9b47d1c26d1d55c64f3b12825da28f3152daac31fbac36dfb7fba9e3' _.fcp.WorkbookFingerprinting.true...creator-author-id='8bc5424b9b47d1c26d1d55c64f3b12825da28f3152daac31fbac36dfb7fba9e3' _.fcp.WorkbookFingerprinting.true...creator-license-type='public' _.fcp.WorkbookFingerprinting.true...creator-machine-id='8bc5424b9b47d1c26d1d55c64f3b12825da28f3152daac31fbac36dfb7fba9e3' _.fcp.WorkbookFingerprinting.true...license-type='public' _.fcp.WorkbookFingerprinting.true...machine-id='8bc5424b9b47d1c26d1d55c64f3b12825da28f3152daac31fbac36dfb7fba9e3' original-version='18.1' source-build='2026.2.2 (20262.26.0819.2015)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AnimationOnByDefault />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelExtractV2 />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <SortTagCleanup />
+    <VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+    <_.fcp.WorkbookFingerprinting.true...WorkbookFingerprinting />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='stroke_for_tableau' inline='true' name='federated.0ntseyo1es0x111bn8crh1ol41sm' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='stroke_for_tableau' name='textscan.09coco81l858cl1b4fhv91w9f5z1'>
+            <connection class='textscan' directory='C:/Projects/stroke-risk-analytics/data/processed' filename='stroke_for_tableau.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.09coco81l858cl1b4fhv91w9f5z1' name='stroke_for_tableau.csv' table='[stroke_for_tableau#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='integer' name='patient_id' ordinal='0' />
+            <column datatype='string' name='gender' ordinal='1' />
+            <column datatype='real' name='age' ordinal='2' />
+            <column datatype='string' name='ever_married' ordinal='3' />
+            <column datatype='string' name='work_type' ordinal='4' />
+            <column datatype='string' name='residence_type' ordinal='5' />
+            <column datatype='integer' name='hypertension' ordinal='6' />
+            <column datatype='integer' name='heart_disease' ordinal='7' />
+            <column datatype='real' name='avg_glucose_level' ordinal='8' />
+            <column datatype='real' name='bmi' ordinal='9' />
+            <column datatype='string' name='smoking_status' ordinal='10' />
+            <column datatype='integer' name='stroke' ordinal='11' />
+            <column datatype='string' name='stroke_label' ordinal='12' />
+            <column datatype='string' name='hypertension_label' ordinal='13' />
+            <column datatype='string' name='heart_disease_label' ordinal='14' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[stroke_for_tableau.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>patient_id</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[patient_id]</local-name>
+            <parent-name>[stroke_for_tableau.csv]</parent-name>
+            <remote-alias>patient_id</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[stroke_for_tableau.csv_4ADFA57BAD664C7CB115DF7B467D0A29]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>gender</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[gender]</local-name>
+            <parent-name>[stroke_for_tableau.csv]</parent-name>
+            <remote-alias>gender</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[stroke_for_tableau.csv_4ADFA57BAD664C7CB115DF7B467D0A29]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>age</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[age]</local-name>
+            <parent-name>[stroke_for_tableau.csv]</parent-name>
+            <remote-alias>age</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[stroke_for_tableau.csv_4ADFA57BAD664C7CB115DF7B467D0A29]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ever_married</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[ever_married]</local-name>
+            <parent-name>[stroke_for_tableau.csv]</parent-name>
+            <remote-alias>ever_married</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[stroke_for_tableau.csv_4ADFA57BAD664C7CB115DF7B467D0A29]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>work_type</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[work_type]</local-name>
+            <parent-name>[stroke_for_tableau.csv]</parent-name>
+            <remote-alias>work_type</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[stroke_for_tableau.csv_4ADFA57BAD664C7CB115DF7B467D0A29]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>residence_type</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[residence_type]</local-name>
+            <parent-name>[stroke_for_tableau.csv]</parent-name>
+            <remote-alias>residence_type</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[stroke_for_tableau.csv_4ADFA57BAD664C7CB115DF7B467D0A29]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>hypertension</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[hypertension]</local-name>
+            <parent-name>[stroke_for_tableau.csv]</parent-name>
+            <remote-alias>hypertension</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[stroke_for_tableau.csv_4ADFA57BAD664C7CB115DF7B467D0A29]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>heart_disease</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[heart_disease]</local-name>
+            <parent-name>[stroke_for_tableau.csv]</parent-name>
+            <remote-alias>heart_disease</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[stroke_for_tableau.csv_4ADFA57BAD664C7CB115DF7B467D0A29]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>avg_glucose_level</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[avg_glucose_level]</local-name>
+            <parent-name>[stroke_for_tableau.csv]</parent-name>
+            <remote-alias>avg_glucose_level</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[stroke_for_tableau.csv_4ADFA57BAD664C7CB115DF7B467D0A29]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>bmi</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[bmi]</local-name>
+            <parent-name>[stroke_for_tableau.csv]</parent-name>
+            <remote-alias>bmi</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[stroke_for_tableau.csv_4ADFA57BAD664C7CB115DF7B467D0A29]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>smoking_status</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[smoking_status]</local-name>
+            <parent-name>[stroke_for_tableau.csv]</parent-name>
+            <remote-alias>smoking_status</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[stroke_for_tableau.csv_4ADFA57BAD664C7CB115DF7B467D0A29]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>stroke</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[stroke]</local-name>
+            <parent-name>[stroke_for_tableau.csv]</parent-name>
+            <remote-alias>stroke</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[stroke_for_tableau.csv_4ADFA57BAD664C7CB115DF7B467D0A29]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>stroke_label</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[stroke_label]</local-name>
+            <parent-name>[stroke_for_tableau.csv]</parent-name>
+            <remote-alias>stroke_label</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[stroke_for_tableau.csv_4ADFA57BAD664C7CB115DF7B467D0A29]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>hypertension_label</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[hypertension_label]</local-name>
+            <parent-name>[stroke_for_tableau.csv]</parent-name>
+            <remote-alias>hypertension_label</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[stroke_for_tableau.csv_4ADFA57BAD664C7CB115DF7B467D0A29]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>heart_disease_label</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[heart_disease_label]</local-name>
+            <parent-name>[stroke_for_tableau.csv]</parent-name>
+            <remote-alias>heart_disease_label</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[stroke_for_tableau.csv_4ADFA57BAD664C7CB115DF7B467D0A29]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column datatype='string' name='[:Measure Names]' role='dimension' type='nominal'>
+        <aliases>
+          <alias key='&quot;[federated.0ntseyo1es0x111bn8crh1ol41sm].[avg:Calculation_1551730986246149:qk]&quot;' value=' Hypertension Rate' />
+          <alias key='&quot;[federated.0ntseyo1es0x111bn8crh1ol41sm].[avg:Calculation_1551730986426374:qk]&quot;' value='Heart Disease Rate' />
+          <alias key='&quot;[federated.0ntseyo1es0x111bn8crh1ol41sm].[sum:heart_disease:qk]&quot;' value='heart_disease' />
+          <alias key='&quot;[federated.0ntseyo1es0x111bn8crh1ol41sm].[sum:hypertension:qk]&quot;' value='hypertension' />
+        </aliases>
+      </column>
+      <column caption='Age (bin)' datatype='integer' name='[Age (bin)]' role='dimension' type='ordinal'>
+        <calculation class='bin' decimals='1' formula='[age]' peg='0' size='10' />
+      </column>
+      <column caption='Hypertension Rate' datatype='integer' default-format='p0.0%' name='[Calculation_1551730986246149]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='IF [hypertension] = 1 THEN [stroke] END' />
+      </column>
+      <column caption='Heart Disease Rate' datatype='integer' default-format='p0.0%' name='[Calculation_1551730986426374]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='IF [heart_disease] = 1 THEN [stroke] END' />
+      </column>
+      <column caption='stroke_for_tableau.csv' datatype='table' name='[__tableau_internal_object_id__].[stroke_for_tableau.csv_4ADFA57BAD664C7CB115DF7B467D0A29]' role='measure' type='quantitative' />
+      <column caption='Age' datatype='real' name='[age]' role='measure' type='quantitative' />
+      <column caption='Avg Glucose Level' datatype='real' name='[avg_glucose_level]' role='measure' type='quantitative' />
+      <column caption='Bmi' datatype='real' name='[bmi]' role='measure' type='quantitative' />
+      <column caption='Ever Married' datatype='string' name='[ever_married]' role='dimension' type='nominal' />
+      <column caption='Gender' datatype='string' name='[gender]' role='dimension' type='nominal' />
+      <column caption='Heart Disease' datatype='integer' name='[heart_disease]' role='measure' type='quantitative' />
+      <column caption='Heart Disease Label' datatype='string' name='[heart_disease_label]' role='dimension' type='nominal' />
+      <column caption='Hypertension' datatype='integer' name='[hypertension]' role='measure' type='quantitative' />
+      <column caption='Hypertension Label' datatype='string' name='[hypertension_label]' role='dimension' type='nominal' />
+      <column caption='Patient Id' datatype='integer' name='[patient_id]' role='measure' type='quantitative' />
+      <column caption='Residence Type' datatype='string' name='[residence_type]' role='dimension' type='nominal' />
+      <column caption='Smoking Status' datatype='string' name='[smoking_status]' role='dimension' type='nominal' />
+      <column caption='Stroke' datatype='integer' name='[stroke]' role='measure' type='quantitative' />
+      <column caption='Stroke Label' datatype='string' name='[stroke_label]' role='dimension' type='nominal' />
+      <column caption='Work Type' datatype='string' name='[work_type]' role='dimension' type='nominal' />
+      <column-instance column='[Calculation_1551730986246149]' derivation='Avg' name='[avg:Calculation_1551730986246149:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Calculation_1551730986426374]' derivation='Avg' name='[avg:Calculation_1551730986426374:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[heart_disease]' derivation='Sum' name='[sum:heart_disease:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[hypertension]' derivation='Sum' name='[sum:hypertension:qk]' pivot='key' type='quantitative' />
+      <extract count='-1' enabled='true' object-id='' units='records' user-specific='false'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='C:/Users/spear/AppData/Local/Temp/TableauTemp/#TableauTemp_13vm0wm09lwpy51c2i593112ximw.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='09/14/2026 07:48:10 PM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>patient_id</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[patient_id]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>patient_id</remote-alias>
+              <ordinal>0</ordinal>
+              <family>stroke_for_tableau.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>5110</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[stroke_for_tableau.csv_4ADFA57BAD664C7CB115DF7B467D0A29]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>gender</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[gender]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>gender</remote-alias>
+              <ordinal>1</ordinal>
+              <family>stroke_for_tableau.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[stroke_for_tableau.csv_4ADFA57BAD664C7CB115DF7B467D0A29]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>age</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[age]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>age</remote-alias>
+              <ordinal>2</ordinal>
+              <family>stroke_for_tableau.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>112</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[stroke_for_tableau.csv_4ADFA57BAD664C7CB115DF7B467D0A29]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>ever_married</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[ever_married]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>ever_married</remote-alias>
+              <ordinal>3</ordinal>
+              <family>stroke_for_tableau.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[stroke_for_tableau.csv_4ADFA57BAD664C7CB115DF7B467D0A29]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>work_type</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[work_type]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>work_type</remote-alias>
+              <ordinal>4</ordinal>
+              <family>stroke_for_tableau.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[stroke_for_tableau.csv_4ADFA57BAD664C7CB115DF7B467D0A29]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>residence_type</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[residence_type]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>residence_type</remote-alias>
+              <ordinal>5</ordinal>
+              <family>stroke_for_tableau.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[stroke_for_tableau.csv_4ADFA57BAD664C7CB115DF7B467D0A29]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>hypertension</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[hypertension]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>hypertension</remote-alias>
+              <ordinal>6</ordinal>
+              <family>stroke_for_tableau.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[stroke_for_tableau.csv_4ADFA57BAD664C7CB115DF7B467D0A29]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>heart_disease</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[heart_disease]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>heart_disease</remote-alias>
+              <ordinal>7</ordinal>
+              <family>stroke_for_tableau.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[stroke_for_tableau.csv_4ADFA57BAD664C7CB115DF7B467D0A29]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>avg_glucose_level</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[avg_glucose_level]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>avg_glucose_level</remote-alias>
+              <ordinal>8</ordinal>
+              <family>stroke_for_tableau.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2418</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[stroke_for_tableau.csv_4ADFA57BAD664C7CB115DF7B467D0A29]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>bmi</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[bmi]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>bmi</remote-alias>
+              <ordinal>9</ordinal>
+              <family>stroke_for_tableau.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>410</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[stroke_for_tableau.csv_4ADFA57BAD664C7CB115DF7B467D0A29]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>smoking_status</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[smoking_status]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>smoking_status</remote-alias>
+              <ordinal>10</ordinal>
+              <family>stroke_for_tableau.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[stroke_for_tableau.csv_4ADFA57BAD664C7CB115DF7B467D0A29]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>stroke</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[stroke]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>stroke</remote-alias>
+              <ordinal>11</ordinal>
+              <family>stroke_for_tableau.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[stroke_for_tableau.csv_4ADFA57BAD664C7CB115DF7B467D0A29]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>stroke_label</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[stroke_label]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>stroke_label</remote-alias>
+              <ordinal>12</ordinal>
+              <family>stroke_for_tableau.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[stroke_for_tableau.csv_4ADFA57BAD664C7CB115DF7B467D0A29]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>hypertension_label</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[hypertension_label]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>hypertension_label</remote-alias>
+              <ordinal>13</ordinal>
+              <family>stroke_for_tableau.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[stroke_for_tableau.csv_4ADFA57BAD664C7CB115DF7B467D0A29]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>heart_disease_label</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[heart_disease_label]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>heart_disease_label</remote-alias>
+              <ordinal>14</ordinal>
+              <family>stroke_for_tableau.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[stroke_for_tableau.csv_4ADFA57BAD664C7CB115DF7B467D0A29]</object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-aliased-fields='true' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='stroke_for_tableau.csv' id='stroke_for_tableau.csv_4ADFA57BAD664C7CB115DF7B467D0A29'>
+            <properties context=''>
+              <relation connection='textscan.09coco81l858cl1b4fhv91w9f5z1' name='stroke_for_tableau.csv' table='[stroke_for_tableau#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='integer' name='patient_id' ordinal='0' />
+                  <column datatype='string' name='gender' ordinal='1' />
+                  <column datatype='real' name='age' ordinal='2' />
+                  <column datatype='string' name='ever_married' ordinal='3' />
+                  <column datatype='string' name='work_type' ordinal='4' />
+                  <column datatype='string' name='residence_type' ordinal='5' />
+                  <column datatype='integer' name='hypertension' ordinal='6' />
+                  <column datatype='integer' name='heart_disease' ordinal='7' />
+                  <column datatype='real' name='avg_glucose_level' ordinal='8' />
+                  <column datatype='real' name='bmi' ordinal='9' />
+                  <column datatype='string' name='smoking_status' ordinal='10' />
+                  <column datatype='integer' name='stroke' ordinal='11' />
+                  <column datatype='string' name='stroke_label' ordinal='12' />
+                  <column datatype='string' name='hypertension_label' ordinal='13' />
+                  <column datatype='string' name='heart_disease_label' ordinal='14' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Stroke Rate KPI'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='stroke_for_tableau' name='federated.0ntseyo1es0x111bn8crh1ol41sm' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0ntseyo1es0x111bn8crh1ol41sm'>
+            <column-instance column='[stroke]' derivation='Avg' name='[avg:stroke:qk]' pivot='key' type='quantitative' />
+            <column caption='Stroke' datatype='integer' name='[stroke]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='text-format' field='[federated.0ntseyo1es0x111bn8crh1ol41sm].[avg:stroke:qk]' value='p0.00%' />
+            <format attr='color' value='#c44e52' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='font-size' value='36' />
+            <format attr='font-weight' value='bold' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.0ntseyo1es0x111bn8crh1ol41sm].[avg:stroke:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+        <show-full-range>
+          <column>[federated.0ntseyo1es0x111bn8crh1ol41sm].[Age (bin)]</column>
+        </show-full-range>
+      </table>
+      <simple-id uuid='{B6546AC9-3FEF-4BC4-9FB6-3E74A58EE33E}' />
+    </worksheet>
+    <worksheet name='Stroke Rate by Age'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='stroke_for_tableau' name='federated.0ntseyo1es0x111bn8crh1ol41sm' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0ntseyo1es0x111bn8crh1ol41sm'>
+            <column caption='Age (bin)' datatype='integer' name='[Age (bin)]' role='dimension' type='ordinal'>
+              <calculation class='bin' decimals='1' formula='[age]' peg='0' size='10' />
+            </column>
+            <column caption='Age' datatype='real' name='[age]' role='measure' type='quantitative' />
+            <column-instance column='[stroke]' derivation='Avg' name='[avg:stroke:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Age (bin)]' derivation='None' name='[none:Age (bin):ok]' pivot='key' type='ordinal' />
+            <column caption='Stroke' datatype='integer' name='[stroke]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='tick-color' value='#00000000' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='vertical-align' data-class='total' scope='cols' value='auto' />
+            <format attr='vertical-align' data-class='subtotal' scope='rows' value='auto' />
+            <format attr='text-align' value='center' />
+            <format attr='text-format' field='[federated.0ntseyo1es0x111bn8crh1ol41sm].[avg:stroke:qk]' value='p0.00%' />
+            <format attr='text-align' field='[federated.0ntseyo1es0x111bn8crh1ol41sm].[avg:stroke:qk]' value='center' />
+            <format attr='vertical-align' field='[federated.0ntseyo1es0x111bn8crh1ol41sm].[avg:stroke:qk]' value='auto' />
+            <format attr='wrap' field='[federated.0ntseyo1es0x111bn8crh1ol41sm].[avg:stroke:qk]' value='auto' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='border-width' data-class='subtotal' scope='cols' value='0' />
+            <format attr='border-style' data-class='subtotal' scope='cols' value='none' />
+            <format attr='text-align' data-class='subtotal' scope='cols' value='auto' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='text-align' scope='cols' value='center' />
+            <format attr='text-align' scope='rows' value='auto' />
+            <format attr='vertical-align' scope='rows' value='auto' />
+            <format attr='text-format' field='[federated.0ntseyo1es0x111bn8crh1ol41sm].[avg:stroke:qk]' value='p0.00%' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.0ntseyo1es0x111bn8crh1ol41sm].[avg:stroke:qk]' type='custom-interpolated'>
+              <color-palette custom='true' name='' type='ordered-sequential'>
+                <color>#f1f1f1</color>
+                <color>#ecdede</color>
+                <color>#e8cccd</color>
+                <color>#e3babb</color>
+                <color>#dfa9ab</color>
+                <color>#da989a</color>
+                <color>#d6888b</color>
+                <color>#d1797c</color>
+                <color>#cd6a6d</color>
+                <color>#c85b5f</color>
+                <color>#c44e52</color>
+              </color-palette>
+            </encoding>
+          </style-rule>
+          <style-rule element='pane'>
+            <format attr='border-width' data-class='subtotal' scope='cols' value='0' />
+            <format attr='border-style' data-class='subtotal' scope='cols' value='none' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='font-size' value='12' />
+          </style-rule>
+          <style-rule element='zeroline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0ntseyo1es0x111bn8crh1ol41sm].[avg:stroke:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols>[federated.0ntseyo1es0x111bn8crh1ol41sm].[none:Age (bin):ok]</cols>
+      </table>
+      <simple-id uuid='{064DE201-8A83-4A69-A478-F6179B292E48}' />
+    </worksheet>
+    <worksheet name='Stroke Rate by Risk Factor'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='stroke_for_tableau' name='federated.0ntseyo1es0x111bn8crh1ol41sm' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0ntseyo1es0x111bn8crh1ol41sm'>
+            <column caption='Hypertension Rate' datatype='integer' default-format='p0.0%' name='[Calculation_1551730986246149]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='IF [hypertension] = 1 THEN [stroke] END' />
+            </column>
+            <column caption='Heart Disease Rate' datatype='integer' default-format='p0.0%' name='[Calculation_1551730986426374]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='IF [heart_disease] = 1 THEN [stroke] END' />
+            </column>
+            <column-instance column='[Calculation_1551730986246149]' derivation='Avg' name='[avg:Calculation_1551730986246149:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_1551730986426374]' derivation='Avg' name='[avg:Calculation_1551730986426374:qk]' pivot='key' type='quantitative' />
+            <column caption='Heart Disease' datatype='integer' name='[heart_disease]' role='measure' type='quantitative' />
+            <column caption='Hypertension' datatype='integer' name='[hypertension]' role='measure' type='quantitative' />
+            <column caption='Stroke' datatype='integer' name='[stroke]' role='measure' type='quantitative' />
+            <column-instance column='[Calculation_1551730986246149]' derivation='Sum' name='[sum:Calculation_1551730986246149:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0ntseyo1es0x111bn8crh1ol41sm].[:Measure Names]'>
+            <groupfilter function='union' user:op='manual'>
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0ntseyo1es0x111bn8crh1ol41sm].[avg:Calculation_1551730986426374:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0ntseyo1es0x111bn8crh1ol41sm].[avg:Calculation_1551730986246149:qk]&quot;' />
+            </groupfilter>
+          </filter>
+          <manual-sort column='[federated.0ntseyo1es0x111bn8crh1ol41sm].[:Measure Names]' direction='ASC'>
+            <dictionary>
+              <bucket>&quot;[federated.0ntseyo1es0x111bn8crh1ol41sm].[avg:Calculation_1551730986426374:qk]&quot;</bucket>
+              <bucket>&quot;[federated.0ntseyo1es0x111bn8crh1ol41sm].[sum:Calculation_1551730986246149:qk]&quot;</bucket>
+            </dictionary>
+          </manual-sort>
+          <slices>
+            <column>[federated.0ntseyo1es0x111bn8crh1ol41sm].[:Measure Names]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='width' field='[federated.0ntseyo1es0x111bn8crh1ol41sm].[:Measure Names]' value='282' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='text-format' field='[federated.0ntseyo1es0x111bn8crh1ol41sm].[Multiple Values]' value='p0.0%' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.0ntseyo1es0x111bn8crh1ol41sm].[Multiple Values]' min='0.13253012' type='custom-interpolated'>
+              <color-palette custom='true' name='' type='ordered-sequential'>
+                <color>#f1f1f1</color>
+                <color>#ecdede</color>
+                <color>#e8cccd</color>
+                <color>#e3babb</color>
+                <color>#dfa9ab</color>
+                <color>#da989a</color>
+                <color>#d6888b</color>
+                <color>#d1797c</color>
+                <color>#cd6a6d</color>
+                <color>#c85b5f</color>
+                <color>#c44e52</color>
+              </color-palette>
+            </encoding>
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='font-size' value='20' />
+          </style-rule>
+          <style-rule element='zeroline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <style>
+              <style-rule element='cell'>
+                <format attr='text-align' value='center' />
+                <format attr='vertical-align' value='top' />
+                <format attr='wrap' value='auto' />
+                <format attr='text-orientation' value='0' />
+              </style-rule>
+              <style-rule element='datalabel'>
+                <format attr='color-mode' value='auto' />
+                <format attr='font-size' value='16' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-color' value='#c44e52' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0ntseyo1es0x111bn8crh1ol41sm].[Multiple Values]</rows>
+        <cols>[federated.0ntseyo1es0x111bn8crh1ol41sm].[:Measure Names]</cols>
+        <mark-labels>
+          <mark-label id='0' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.0ntseyo1es0x111bn8crh1ol41sm].[:Measure Names]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.0ntseyo1es0x111bn8crh1ol41sm].[Multiple Values]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0ntseyo1es0x111bn8crh1ol41sm].[:Measure Names]</field>
+                  <field>[federated.0ntseyo1es0x111bn8crh1ol41sm].[Multiple Values]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;[federated.0ntseyo1es0x111bn8crh1ol41sm].[avg:Calculation_1551730986246149:qk]&quot;</value>
+                <value>0.13253012048192772</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+        </mark-labels>
+      </table>
+      <simple-id uuid='{64797B86-90AE-4012-9632-8FF4D2F86D9C}' />
+    </worksheet>
+  </worksheets>
+  <windows source-height='30'>
+    <window class='worksheet' name='Stroke Rate KPI'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{E7399036-581D-4B8B-AD94-63B1EDF9F2B7}' />
+    </window>
+    <window class='worksheet' name='Stroke Rate by Age'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0ntseyo1es0x111bn8crh1ol41sm].[avg:stroke:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0ntseyo1es0x111bn8crh1ol41sm].[none:Age (bin):ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{DD12B30A-3511-4E64-9BB9-8F78003BCD90}' />
+    </window>
+    <window class='worksheet' maximized='true' name='Stroke Rate by Risk Factor'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+            <card type='measures' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0ntseyo1es0x111bn8crh1ol41sm].[:Measure Names]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{7AA651CF-6E24-483E-B22A-CE2CAD611F87}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='70' name='Stroke Rate KPI' width='164'>
+      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
+    </thumbnail>
+    <thumbnail height='67' name='Stroke Rate by Age' width='192'>
+      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
+      +xugoaGB+vp6goKC2pVFPPMM17Vam2M1NTXxzqJFHDl8mI+XLsXd3bb0fX18CA8Pp7y8HIDG
+      xkYqzp4lWq2mpKQEhVJJVFQUO7OySE1NpaCggNbWVpvzsif21s+W+D1Wv4gI506DymQy6vV6
+      m849ffo0v3/2WQDy8vKeeLCVtmABBYWFTJ8xgylTpxIdHc2gQYMo+uYbZs6YweL33uPC+fOk
+      paWxOzeXVatWPXF7HI299Wsbv6fqZ/cxgFwuRy6XU11T027q7fjx44wZM+Zn6+fk5LA2PZ2s
+      nTv57he8lxQYGMi/8vIefq6srGTJhx/yxYoVlJWV0WoysWzZMgDWZ2Tw1ttvo9VqO51udRT2
+      1s/W+C6vX3V1h+2z+xMgICCAyCFD2g1OdTodZ8rLiRk9utO6VVVVrN+wgcytWxk8eHCX5dTS
+      0sK6jAxmJybi7e2Nh4cHzS0tGO9PnZrN5m7zCLe3fk8T3+X0i4zsuH1nzjimCzRr1izy8/O5
+      eNGyPc9sNrNx0ybkvXqhVls2XRuNRjQaDSVHjz6sd/jIEcLDw4mIiOjSfPLz8/H29iYmJgaw
+      TInV19dz+fJlACrOncPT05OgPn269O8+LfbWz5b4bekR+m3ciFwud8w6wMiRI0lbsIDJL76I
+      Wq2m9vp1fP382LF9O973f5GsubmZz5cvp3///owbOxawLOTk5eWR1+bR+wCVSsVBjQaVSkXa
+      woXs27cPsFwIBoPBshrp5sZvoqPZvHnzw1XLmpoa/pGTw5rVqx8OooOCgkhKSmLmrFmEhYVx
+      9epV1mdktFtJdhb21s+W+A9wWf3S0pg8ebKlfbW1+Pr6smPHDse+Dt3U3Izuzh3c3d0JDg62
+      WpxxFK2trbi5uXU4g9TU3IxOp6Nf3754eXW/HbH21s+W+A7Xrwtfh25qakKn01m1T+wHEHRv
+      xH4AgcB+/A9ELPmRTbZ+LAAAAABJRU5ErkJggg==
+    </thumbnail>
+    <thumbnail height='192' name='Stroke Rate by Risk Factor' width='192'>
+      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
+      rkJggg==
+    </thumbnail>
+  </thumbnails>
+</workbook>
