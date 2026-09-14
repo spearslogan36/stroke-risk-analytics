@@ -24,5 +24,3 @@ jobs:
 
       - name: Run tests
         run: pytest
-
-Save it. Quick recap of what this does, since the au
