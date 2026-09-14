@@ -3,6 +3,7 @@ Preprocessing for the stroke dataset, built as a leakage-safe scikit-learn
 pipeline.
 
 """
+# pyright: reportAttributeAccessIssue=false
 
 import pandas as pd
 from sklearn.compose import ColumnTransformer
