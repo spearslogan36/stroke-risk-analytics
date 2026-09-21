@@ -1,0 +1,28 @@
+{
+  "Male": {
+    "n": 425,
+    "actual_positives": 21,
+    "tp": 16,
+    "fn": 5,
+    "tn": 292,
+    "fp": 112,
+    "recall": 0.7619047619047619,
+    "false_positive_rate": 0.27722772277227725
+  },
+  "Female": {
+    "n": 597,
+    "actual_positives": 29,
+    "tp": 24,
+    "fn": 5,
+    "tn": 410,
+    "fp": 158,
+    "recall": 0.8275862068965517,
+    "false_positive_rate": 0.27816901408450706
+  },
+  "recall_gap_significance_test": {
+    "test": "Fisher's exact test on TP/FN counts by gender",
+    "odds_ratio": 0.6666666666666666,
+    "p_value": 0.7232362039899861,
+    "interpretation": "not statistically significant (p >= 0.05): no evidence of a real recall disparity by gender, though the sample is too small to rule one out with confidence"
+  }
+}
