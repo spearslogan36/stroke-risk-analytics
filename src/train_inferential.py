@@ -9,7 +9,6 @@
 # stubs don't declare it. Both are confirmed false positives, not real bugs.
 # pyright: reportAttributeAccessIssue=false, reportArgumentType=false
 
-
 import sys
 import warnings
 from pathlib import Path

@@ -1,0 +1,22 @@
+|--- age <= 47.50
+|   |--- age <= 37.50
+|   |   |--- age <= 1.36
+|   |   |   |--- class: 0
+|   |   |--- age >  1.36
+|   |   |   |--- class: 0
+|   |--- age >  37.50
+|   |   |--- bmi <= 45.70
+|   |   |   |--- class: 0
+|   |   |--- bmi >  45.70
+|   |   |   |--- class: 1
+|--- age >  47.50
+|   |--- age <= 67.50
+|   |   |--- avg_glucose_level <= 161.58
+|   |   |   |--- class: 1
+|   |   |--- avg_glucose_level >  161.58
+|   |   |   |--- class: 1
+|   |--- age >  67.50
+|   |   |--- avg_glucose_level <= 129.35
+|   |   |   |--- class: 1
+|   |   |--- avg_glucose_level >  129.35
+|   |   |   |--- class: 1

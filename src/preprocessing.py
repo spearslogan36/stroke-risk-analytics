@@ -22,14 +22,15 @@ def filter_unmodelable_records(df: pd.DataFrame) -> pd.DataFrame:
     return df
 
 
-def build_preprocessing_pipeline() -> ColumnTransformer:
-    """Returns an unfitted ColumnTransformer. Call .fit_transform() on
-    training data, and .transform() (never .fit_transform()) on test data
-    or any new data."""
-    numeric_transformer = Pipeline(steps=[
-        ("impute", SimpleImputer(strategy="median")),
-        ("scale", StandardScaler()),
-    ])
+def build_preprocessing_pipeline(scale_numeric: bool = True) -> ColumnTransformer:
+    if scale_numeric:
+        numeric_transformer = Pipeline(steps=[
+            ("impute", SimpleImputer(strategy="median")),
+            ("scale", StandardScaler()),
+        ])
+    else:
+        numeric_transformer = SimpleImputer(strategy="median")
+
     categorical_transformer = OneHotEncoder(drop="first", handle_unknown="ignore", sparse_output=False)
 
     preprocessor = ColumnTransformer(transformers=[
@@ -39,7 +40,6 @@ def build_preprocessing_pipeline() -> ColumnTransformer:
     ])
     preprocessor.set_output(transform="pandas")
     return preprocessor
-
 
 if __name__ == "__main__":
     import sys
