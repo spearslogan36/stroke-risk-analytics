@@ -14,25 +14,6 @@ This is **not** a clinical tool, and it doesn't discover anything new about stro
 
 **2. Real methodology bugs caught and fixed** Working on this project revealed three leakage issues: a missing-value imputation computed on the full dataset instead of training data only, a rare-category handling decision made by inspecting outcome rates across the *entire* dataset before splitting, and a classification threshold selected by testing directly against the test set. All three are fixed here — not patched over, but fixed at the architectural level (a `ColumnTransformer`/`Pipeline` that makes the imputation mistake structurally hard to repeat; Firth's penalized logistic regression instead of a target-informed category merge; out-of-fold threshold selection via `cross_val_predict` instead of test-set peeking). See [Data leakage: what was wrong, and how it's fixed](#data-leakage-what-was-wrong-and-how-its-fixed) below.
 
-## Project structure
-stroke-risk-analytics/
-├── data/
-│ ├── raw/ # source CSV (tracked)
-│ └── processed/ # generated SQLite DB (gitignored, rebuild with build_database.py)
-├── sql/ # schema + EDA queries
-├── src/
-│ ├── build_database.py # CSV -> normalized SQLite (patients + clinical_records)
-│ ├── data_access.py # SQL -> pandas read layer
-│ ├── preprocessing.py # leakage-safe cleaning/encoding pipeline
-│ ├── train_logistic.py # logistic regression (predictive)
-│ ├── train_inferential.py # Firth's penalized logistic regression (inferential)
-│ ├── train_decision_tree.py
-│ ├── train_naive_bayes.py
-│ ├── cluster_patients.py # K-means, unsupervised
-│ └── compare_models.py # pulls all three supervised models into one table
-├── tests/ # pytest suite
-├── outputs/ # generated metrics, figures, comparison table
-└── .github/workflows/ # CI: runs the test suite on every push
 ## Data flow
 
 ```mermaid
