@@ -1,0 +1,40 @@
+{
+  "default_prior": {
+    "accuracy": 0.5596868884540117,
+    "precision": 0.08677685950413223,
+    "recall": 0.84,
+    "f1": 0.15730337078651685,
+    "roc_auc": 0.796604938271605,
+    "confusion_matrix": [
+      [
+        530,
+        442
+      ],
+      [
+        8,
+        42
+      ]
+    ]
+  },
+  "tuned_prior": {
+    "best_params": {
+      "classifier__priors": null
+    },
+    "cv_roc_auc": 0.8125630368496692,
+    "accuracy": 0.5596868884540117,
+    "precision": 0.08677685950413223,
+    "recall": 0.84,
+    "f1": 0.15730337078651685,
+    "roc_auc": 0.796604938271605,
+    "confusion_matrix": [
+      [
+        530,
+        442
+      ],
+      [
+        8,
+        42
+      ]
+    ]
+  }
+}
